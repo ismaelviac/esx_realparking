@@ -14,8 +14,8 @@ SpawnedVehicles  = false
 
 RegisterNetEvent("esx_realparking:refreshVehicles")
 AddEventHandler("esx_realparking:refreshVehicles", function(vehicles)
-	RemoveVehicles()
-	Citizen.Wait(1000)
+	--RemoveVehicles()
+	Citizen.Wait(50)
 	SpawnVehicles(vehicles)
 end)
 
